@@ -13,3 +13,36 @@ docker exec test find / | grep -E "FILENAME|filename"
 <pre>
   MNT namespace isolates the mount point
 </pre>
+Superposition of Docker Image Layers
+
+Docker image layers stacked on top of each other:
+
+               ┌─────────────────────────────┐
+               │   Layer 4: App Code         │
+               │   (COPY app/, RUN pip ...)  │
+               └─────────────────────────────┘
+               ┌─────────────────────────────┐
+               │   Layer 3: Dependencies     │
+               │   (RUN apt install python)  │
+               └─────────────────────────────┘
+               ┌─────────────────────────────┐
+               │   Layer 2: Updates          │
+               │   (RUN apt update)          │
+               └─────────────────────────────┘
+               ┌─────────────────────────────┐
+               │   Layer 1: Base (Ubuntu)    │
+               └─────────────────────────────┘
+
+                 ↓  Superposition (Union FS)
+
+        ┌────────────────────────────────────────┐
+        │      CONTAINER VIEW (merged FS)        │
+        │  All layers appear as one filesystem   │
+        └────────────────────────────────────────┘
+
+👉 Explanation
+
+Even though the filesystem is split into multiple layers, Docker merges them using a union filesystem (OverlayFS) so the container sees one combined filesystem.
+
+**Copy-on-Write:**
+Purpose of copy on write is to share layer between different containers.
