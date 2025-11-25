@@ -13,3 +13,13 @@ Copy on write:
 
 Where are the layers stored?
 sudo ls /var/lib/docker/overlay2/
+
+---
+
+How do we create layers?
+<pre> Using Dockerfile </pre>
+<pre>Dockerfile is the manifect of the creation of image layer.</pre>
+When you create docker image with Dockerfile, you create layers.Below image having 6 layers.
+<p></p>
+<img width="682" height="346" alt="image" src="https://github.com/user-attachments/assets/541f3589-89b0-4052-9a61-c76bcdb6b12b" />
+
