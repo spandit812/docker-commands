@@ -10,3 +10,6 @@ Copy on write:
 <img width="566" height="396" alt="image" src="https://github.com/user-attachments/assets/9f4512c4-e54e-42f0-850a-d32ec1a005f1" />
 
 ---
+
+Where are the layers stored?
+sudo ls /var/lib/docker/overlay2/
