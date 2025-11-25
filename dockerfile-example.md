@@ -16,3 +16,7 @@ But this way, it will create 3 layers. so better to reduce the number of lines i
 ---
 
 <pre>If any another container, having FROM node:4-slim, use the same layer as the another container</pre>
+
+---
+
+<pre>Dockerfile you configer the layer / file system of your docker container. Docker image is the super position of file system layers.</pre>
