@@ -23,3 +23,9 @@ When you create docker image with Dockerfile, you create layers.Below image havi
 <p></p>
 <img width="682" height="346" alt="image" src="https://github.com/user-attachments/assets/541f3589-89b0-4052-9a61-c76bcdb6b12b" />
 
+<p>
+
+</p>
+
+---
+<pre>less number of layers in the Dockerfie will improve the performance of the container</pre>
