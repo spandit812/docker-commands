@@ -10,5 +10,9 @@ FROM node:4-slim
 RUN npm install express
 RUN npm install redis@3.1.2
 </pre>
+
 But this way, it will create 3 layers. so better to reduce the number of lines in the Dockerfile.
 
+---
+
+<pre>If any another container, having FROM node:4-slim, use the same layer as the another container</pre>
