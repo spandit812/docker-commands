@@ -1,4 +1,3 @@
----
 
 <pre>
 +----------------------------------------------------+
@@ -20,7 +19,6 @@ Each tenant gets its own Docker network so containers for Tenant A cannot direct
 
 Each tenant’s data is stored in separate volumes or separate paths, with access controlled by Docker and filesystem permissions.​
 </pre>
----
 ---
 
 <pre>
