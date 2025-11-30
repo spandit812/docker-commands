@@ -20,3 +20,12 @@ But this way, it will create 3 layers. so better to reduce the number of lines i
 ---
 
 <pre>Dockerfile you configer the layer / file system of your docker container. Docker image is the super position/ composition of file system layers.</pre>
+
+To write muliple line through commnad:
+
+---
+
+  mkdir test/
+  tee test/Dockerfile 0<<EOF add lines here EOF
+
+---
