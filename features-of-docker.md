@@ -5,23 +5,3 @@
 <img width="835" height="496" alt="image" src="https://github.com/user-attachments/assets/d7500104-3b47-4a42-9fb3-c64c4adce97b" />
 
 <img width="890" height="514" alt="image" src="https://github.com/user-attachments/assets/f8f2230d-525b-4427-aae2-25dd7c3cc431" />
-<pre>
-  This CMD is metadata, when you run the docker container it will run by default. But if not added in the Dockerfile, you will have to      explicitly pass --entrypoint at the time of running the container. example:
-  docker run --detach --entrypoint sleep --name test  docker.io/library/busybox:latest infinity
---  CMD is metadata because it specifies what command should run by default, but this does not run during image build time.
---  This metadata (CMD) can be overridden at runtime if a different command is provided during <b>docker run</b>
--- you can customize the entrypoint at the time of <b> docker run </b> by --entrypoint 
--- CMD is not a real layer, it is just a metadata.
--- docker inspect container-name ---> it gives the detail about the container.
-</pre>
----
-<pre>
-  > service docker status ---> This is docker server information
-  > docker version        ---> This is client information
-</pre>
-<pre>
-  Nginx dockerfile:
-  <img width="421" height="182" alt="image" src="https://github.com/user-attachments/assets/016f45f7-7b46-44c6-b293-94ddbadb2dbd" />
-  here ENTRYPOINT is command and CMD will be argument.
-  final command will be <b> /docker-entrypoint.sh nginx -g daemon off </b>
-</pre>
