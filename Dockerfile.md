@@ -27,4 +27,10 @@ history of the layers
 docker history localhost/my-library/busybox:sleep
 
 ---
+---
+
+<pre>
+  <b>Recommendation:</b> It is recommended to keep ENTRYPOINT and CMD in [] with double quotation to run by linux directly. If not passed it wll be run by shell.
+</pre>
+---
 
