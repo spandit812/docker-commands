@@ -4,6 +4,8 @@
 
 <img width="835" height="496" alt="image" src="https://github.com/user-attachments/assets/d7500104-3b47-4a42-9fb3-c64c4adce97b" />
 
+<img width="890" height="514" alt="image" src="https://github.com/user-attachments/assets/f8f2230d-525b-4427-aae2-25dd7c3cc431" />
+
 ---
 <pre>
   > service docker status ---> This is docker server information
