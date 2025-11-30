@@ -1,7 +1,7 @@
 <pre>
   FROM docker.io/library/busybox:latest
-  ENTRYPOINT sleep
-  CMD: infinity
+  ENTRYPOINT ["sleep"]
+  CMD: ["infinity"]
 </pre>
 
 Dockerfile is a manifest to create container file system.
@@ -14,7 +14,16 @@ docker run --detach --entrypoint sleep --name test  docker.io/library/busybox:la
 <pre>
 To create the docker file system with Dockerfile we run the command below:
 docker build -t name-of-the-docker-image folder-where-Dockerfile-existing
-<b>Example:</b> docker build --tag localhost/my_library/my_busybox:sleep test/
+
+  <b>Example:</b> docker build --tag localhost/my_library/my_busybox:sleep test/
   :sleep is the version
 </pre>
+
+---
+
+history of the layers
+
+docker history localhost/my-library/busybox:sleep
+
+---
 
