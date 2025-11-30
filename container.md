@@ -10,6 +10,7 @@ docker rm --force test test1
 docker run -d --name test --entrypoint sleep docker.io/library/busybox:latest test infinity
 
 docker inspect test | grep Entrypoint -A2
+docker logs test
 
 
 </pre>
