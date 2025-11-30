@@ -11,6 +11,8 @@
 --  CMD is metadata because it specifies what command should run by default, but this does not run during image build time.
 --  This metadata (CMD) can be overridden at runtime if a different command is provided during <b>docker run</b>
 -- you can customize the entrypoint at the time of <b> docker run </b> by --entrypoint 
+-- CMD is not a real layer, it is just a metadata.
+-- docker inspect container-name ---> it gives the detail about the container.
 </pre>
 ---
 <pre>
