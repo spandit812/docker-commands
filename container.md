@@ -9,7 +9,7 @@ docker exec --interactive --tty test top
 docker rm --force test test1 
 docker run -d --name test --entrypoint sleep docker.io/library/busybox:latest test infinity
 
-docker inspect test1 | grep Entrypoint -A2
+docker inspect test | grep Entrypoint -A2
 
 
 </pre>
