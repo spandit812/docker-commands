@@ -6,8 +6,10 @@
 
 <img width="890" height="514" alt="image" src="https://github.com/user-attachments/assets/f8f2230d-525b-4427-aae2-25dd7c3cc431" />
 <pre>
-  This CMD is metadata, when you run the docker container it will run by default. But if not added in the Dockerfile, you will have to explicitly pass --entrypoint at the time of running the container. example:
+  This CMD is metadata, when you run the docker container it will run by default. But if not added in the Dockerfile, you will have to      explicitly pass --entrypoint at the time of running the container. example:
   docker run --detach --entrypoint sleep --name test  docker.io/library/busybox:latest infinity
+--  CMD is metadata because it specifies what command should run by default, but this does not run during image build time.
+--  This metadata (CMD) can be overridden at runtime if a different command is provided during docker run
 </pre>
 ---
 <pre>
