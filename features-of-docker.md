@@ -9,7 +9,7 @@
   This CMD is metadata, when you run the docker container it will run by default. But if not added in the Dockerfile, you will have to      explicitly pass --entrypoint at the time of running the container. example:
   docker run --detach --entrypoint sleep --name test  docker.io/library/busybox:latest infinity
 --  CMD is metadata because it specifies what command should run by default, but this does not run during image build time.
---  This metadata (CMD) can be overridden at runtime if a different command is provided during docker run
+--  This metadata (CMD) can be overridden at runtime if a different command is provided during <b>docker run</b>
 </pre>
 ---
 <pre>
