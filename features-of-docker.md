@@ -19,3 +19,9 @@
   > service docker status ---> This is docker server information
   > docker version        ---> This is client information
 </pre>
+<pre>
+  Nginx dockerfile:
+  <img width="421" height="182" alt="image" src="https://github.com/user-attachments/assets/016f45f7-7b46-44c6-b293-94ddbadb2dbd" />
+  here ENTRYPOINT is command and CMD will be argument.
+  final command will be <b> /docker-entrypoint.sh nginx -g daemon off </b>
+</pre>
