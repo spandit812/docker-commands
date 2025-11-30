@@ -10,6 +10,7 @@
   docker run --detach --entrypoint sleep --name test  docker.io/library/busybox:latest infinity
 --  CMD is metadata because it specifies what command should run by default, but this does not run during image build time.
 --  This metadata (CMD) can be overridden at runtime if a different command is provided during <b>docker run</b>
+-- you can customize the entrypoint at the time of <b> docker run </b> by --entrypoint 
 </pre>
 ---
 <pre>
