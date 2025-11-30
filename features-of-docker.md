@@ -5,7 +5,10 @@
 <img width="835" height="496" alt="image" src="https://github.com/user-attachments/assets/d7500104-3b47-4a42-9fb3-c64c4adce97b" />
 
 <img width="890" height="514" alt="image" src="https://github.com/user-attachments/assets/f8f2230d-525b-4427-aae2-25dd7c3cc431" />
-
+<pre>
+  This CMD is metadata, when you run the docker container it will run by default. But if not added in the Dockerfile, you will have to explicitly pass --entrypoint at the time of running the container. example:
+  docker run --detach --entrypoint sleep --name test  docker.io/library/busybox:latest infinity
+</pre>
 ---
 <pre>
   > service docker status ---> This is docker server information
