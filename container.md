@@ -11,6 +11,8 @@ docker run -d --name test --entrypoint sleep docker.io/library/busybox:latest te
 
 docker inspect test | grep Entrypoint -A2
 docker logs test
+docker stop containe-name
+docker restart container-name
 
 
 </pre>
