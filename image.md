@@ -5,5 +5,6 @@
   docker inspect localhost/my-library/busybox:sleep | grep Layers -A2
   
   <b>To remove the image layers which are not used any more:</b>  docker image prune --force
+  docker tag localhost/my_library/my_php:alpine localhost:5000/my_library/my_php:alpine
   
 </pre>
