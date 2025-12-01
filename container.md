@@ -12,7 +12,8 @@ docker run -d --name test --entrypoint sleep docker.io/library/busybox:latest te
 docker inspect test | grep Entrypoint -A2
 docker logs test
 docker stop containe-name
-docker restart container-name
+docker port container-name
+docker restart container-name (If any application running on a port might run on different port at host side)
 
 
 </pre>
