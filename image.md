@@ -6,6 +6,6 @@
   
   <b>To remove the image layers which are not used any more:</b>  docker image prune --force
   
-  docker tag localhost/my_library/my_php:alpine localhost:5000/my_library/my_php:alpine
+  <b>Modify name of the image:</b>  docker tag localhost/my_library/my_php:alpine localhost:5000/my_library/my_php:alpine
   
 </pre>
