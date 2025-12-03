@@ -19,5 +19,8 @@ Lets create one container with image registry, which helps us to push, tag and a
 <b> to create container which suppots registry:</b>
 
 docker run --detach --name registry --publish 5000:5000 --restart always --volume my_volume:/var/lib/registry:rw docker.io/library/registry:2
+
+<b>Push image into registry</b>
+docker push localhost:5000/my_library/myphp:alpine
 </pre>
 
