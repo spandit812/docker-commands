@@ -23,9 +23,15 @@ docker run --detach --name registry --publish 5000:5000 --restart always --volum
 <b>Push image into registry</b>
 docker push localhost:5000/my_library/myphp:alpine
 </pre>
-
+---
 <pre>
   docker volume ls
   docker inspect my_volume
 </pre>
+---
+---
 
+When we push the image it goes into /var/lib/docker/volume folder
+when we pull: immage goes to /var/lib/docker/overlay2 folder.
+
+---
