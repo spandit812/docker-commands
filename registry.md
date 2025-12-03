@@ -1,7 +1,7 @@
 Dockerhub registry: https://hub.docker.com/
 
 ---
-you can create the registry on premises.
+Registry is used to store the image. you can create the registry on premises.
 
 ---
 <pre>
@@ -13,6 +13,11 @@ you can create the registry on premises.
 <b>docker pull mysql</b> is equivalent to <b>docker pull docker.io/library/mysql:latest</b>
 
 ---
+<pre>
+Lets create one container with image registry, which helps us to push, tag and apis related to registry.
 
+<b> to create container which suppots registry:</b>
 
+docker run --detach --name registry --publish 5000:5000 --restart always --volume my_volume:/var/lib/registry:rw docker.io/library/registry:2
+</pre>
 
