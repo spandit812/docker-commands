@@ -24,3 +24,8 @@ docker run --detach --name registry --publish 5000:5000 --restart always --volum
 docker push localhost:5000/my_library/myphp:alpine
 </pre>
 
+<pre>
+  docker volume ls
+  docker inspect my_volume
+</pre>
+
