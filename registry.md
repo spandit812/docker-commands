@@ -35,3 +35,9 @@ When we push the image it goes into /var/lib/docker/volume folder
 when we pull: immage goes to /var/lib/docker/overlay2 folder.
 
 ---
+---
+<pre>
+<b>If you want to delete the images pushed in the local registry by api add -e REGISTRY_STORAGE_DELETE_ENABLED=true</b>
+docker run --detach --name registry --publish 5000:5000 --volume my_registry:/var/lib/registry:rw --restart always -e REGISTRY_STORAGE_DELETE_ENABLED=true docker.io/library/registry:2
+</pre>
+---
