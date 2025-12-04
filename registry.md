@@ -41,3 +41,18 @@ when we pull: immage goes to /var/lib/docker/overlay2 folder.
 docker run --detach --name registry --publish 5000:5000 --volume my_registry:/var/lib/registry:rw --restart always -e REGISTRY_STORAGE_DELETE_ENABLED=true docker.io/library/registry:2
 </pre>
 ---
+---
+<pre>
+docker pull busybox:latest
+docker tag busybox:latest localhost:5000/my_busybox1:infinity
+docker push localhost:5000/my_busybox1:infinity
+
+docker run --detach --name sleep1 --entrypoint sleep --volume my_data:/data1/:rw localhost:5000/my_busybox1:infinity infinity
+docker run --detach --name sleep2 --entrypoint sleep --volume my_data:/data1/:rw localhost:5000/my_busybox1:infinity infinity
+
+docker exec sleep1 touch /data1/shashi.txt
+docker exec sleep2 touch /data1/shashi2.txt
+Both containers pointing to same volume
+docker exec sleep1 ls /data1/
+docker exec sleep2 ls /data1/
+</pre>
