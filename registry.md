@@ -52,7 +52,9 @@ docker run --detach --name sleep2 --entrypoint sleep --volume my_data:/data1/:rw
 
 docker exec sleep1 touch /data1/shashi.txt
 docker exec sleep2 touch /data1/shashi2.txt
+  
 Both containers pointing to same volume
+
 docker exec sleep1 ls /data1/
 docker exec sleep2 ls /data1/
 </pre>
