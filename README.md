@@ -1,3 +1,5 @@
+<b>Docker client version:</b>  docker version </br>
+<b>Docker demon or docker engine or doker server status:</b> service docker status
 # docker-commands
 ---
 - To access the docker container file system from the operating system:
