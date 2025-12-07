@@ -10,4 +10,7 @@
   <br/>
   <b>To list the different layer of the registry:2 image:</b> docker inspect registry:2
   layers contains all the library file system of your container.
+  Image layers are immutable, ready only. Same image layers are mounted to different containers in read only mode.
+  <img width="586" height="347" alt="image" src="https://github.com/user-attachments/assets/4b5be751-ed72-4b33-9013-ec69f5aa7253" />
+
 </pre>
