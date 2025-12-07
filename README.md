@@ -1,5 +1,7 @@
 <b>Docker client version:</b>  docker version </br>
 <b>Docker demon or docker engine or doker server status:</b> service docker status
+<br/>
+are at the same location. But in the procuction environment, docker demon goes in some other machine and client on anothe machine.
 # docker-commands
 ---
 - To access the docker container file system from the operating system:
