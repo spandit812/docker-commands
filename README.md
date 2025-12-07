@@ -4,6 +4,9 @@
 Both are at the same location. 
 <br/>
 But in the procuction environment, docker demon goes in some other machine and client on anothe machine.
+<br/>
+<img width="618" height="357" alt="image" src="https://github.com/user-attachments/assets/fc7f3af4-7890-4e33-9b07-d237b4e7f950" />
+
 # docker-commands
 ---
 - To access the docker container file system from the operating system:
