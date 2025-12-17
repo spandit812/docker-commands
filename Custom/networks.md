@@ -6,4 +6,8 @@
   docker run --detach --name test-custom-bridge-02 --network custom-bridge --tty docker.io/library/busybox:latest
 
   docker inspect custom-bridge --> you can check here container connected with custom-bridge
+
+  docker exec test-bridge-custom-1 ping 172.18.0.3 -c1
+
+  Now you can not connect to default bridge network.
 </pre>
