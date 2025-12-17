@@ -18,7 +18,10 @@ Overlay is vertual, uderlay is physical.
 
 ---
 <pre>
-  <b>Run container with null network</b>
+  <b>Run container with null network, we use this when you want to make your container isolated from containers and attackers, ex: Certificate authority, cryptography engine</b>
   docker container run --detach --name test-none --network none --tty docker.io/library/busybox:latest
   docker exec test-none ifconfig
+  docker exec test-none ping localhost  --> I can only access local network
+  docker exec test-non ping 8.8.8.8     --> I can not access real network
+  
 </pre>
