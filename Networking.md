@@ -49,3 +49,11 @@ Overlay is vertual, uderlay is physical.
   docker exec test-bridge ping 8.8.8.8 -c1     --> I can access real network
 
 </pre>
+<pre>
+  <b>Host Network: Same networks like host network</b>
+  docker run --detach --name test-host --network host --tty docker.io/library/busybox:latest
+  docker exec test-bridge ifconfig
+  <img width="710" height="372" alt="image" src="https://github.com/user-attachments/assets/c6dec86f-a33b-46be-9668-488a0ee5354f" />
+
+
+</pre>
