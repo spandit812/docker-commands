@@ -4,5 +4,6 @@
   docker network ls
   docker run --detach --name test-custom-bridge-01 --network custom-bridge --tty docker.io/library/busybox:latest
   docker run --detach --name test-custom-bridge-02 --network custom-bridge --tty docker.io/library/busybox:latest
-  
+
+  docker inspect custom-bridge --> you can check here container connected with custom-bridge
 </pre>
