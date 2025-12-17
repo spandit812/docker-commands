@@ -40,6 +40,12 @@ Overlay is vertual, uderlay is physical.
 
   <b>Disconnet container from bridge network to make it none/loopback network:</b>
   docker network disconnect --force bridge test-bridge
-
+  docker exec test-bridge ping localhost -c1  --> I can access local network
+  docker exec test-bridge ping 8.8.8.8 -c1     --> I can not access real network
+  
+  <b>Connect the bridge network: this time it will work</b>
+  docker network connect bridge test-bridge
+  docker exec test-bridge ping localhost -c1  --> I can access local network
+  docker exec test-bridge ping 8.8.8.8 -c1     --> I can access real network
 
 </pre>
