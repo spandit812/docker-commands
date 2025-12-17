@@ -30,3 +30,11 @@ Overlay is vertual, uderlay is physical.
   docker network connect bridge test-none
   
 </pre>
+---
+<pre>
+<b>Run container in bridge network:</b>
+  docker container run --detach --name test-bridge --network bridge --tty docker.io/library/busybox:latest
+  docker exec test-bridge ifconfig
+  docker exec test-bridge ping localhost  --> I can access local network
+  docker exec test-bridge ping 8.8.8.8     --> I can access real network
+</pre>
