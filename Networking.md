@@ -8,3 +8,17 @@ Overlay is vertual, uderlay is physical.
 4. Macvlan network  -- When container wants to connect to the data center though vlan.
 5. Third-party network plugins ---
 </pre>
+---
+<pre>
+  When we do <b>docker network ls</b> it gives below networks (Drivers):
+  briged 
+  host
+  null --> when we use null network, your container will not have network.
+</pre>
+
+---
+<pre>
+  <b>Run container with null network</b>
+  docker container run --detach --name test-none --network none --tty docker.io/library/busybox:latest
+  docker exec test-none ifconfig
+</pre>
