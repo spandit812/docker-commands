@@ -11,6 +11,10 @@
 
   Now you can not connect to default bridge network.
 
-  We can connect the containers by name, and not only by IP address. It only happen in custom bridge network not with default bridge network. 
+  We can connect the containers by name, and not only by IP address. It only happen in custom bridge network not with default bridge     network. 
+  you can connect custom bridge network to default network:
+  
+  docker network connect bridge test-bridge-custom-1
+
   <b>In the customer bridge, it also gives DNS resolver to call container by name.</b>
 </pre>
