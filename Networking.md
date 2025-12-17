@@ -37,4 +37,9 @@ Overlay is vertual, uderlay is physical.
   docker exec test-bridge ifconfig
   docker exec test-bridge ping localhost -c1  --> I can access local network
   docker exec test-bridge ping 8.8.8.8 -c1     --> I can access real network
+
+  <b>Disconnet container from bridge network to make it none/loopback network:</b>
+  docker network disconnect --force bridge test-bridge
+
+
 </pre>
