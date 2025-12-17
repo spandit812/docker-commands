@@ -59,3 +59,7 @@ Overlay is vertual, uderlay is physical.
   <b>You can check, how many containers connected with bridge network:</b>
   docker network inspect bridge
 </pre>
+<pre>
+  Connect from one bridge container to another bridge container like:
+  docker exec registry ping 172.17.0.4 -c  --- Here IP is container IP.
+</pre>
