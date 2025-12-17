@@ -23,5 +23,10 @@ Overlay is vertual, uderlay is physical.
   docker exec test-none ifconfig
   docker exec test-none ping localhost  --> I can only access local network
   docker exec test-non ping 8.8.8.8     --> I can not access real network
+</pre>
+---
+<pre>
+  To connect to the bridge network for none container. It is not possible.
+  docker network connect bridge test-none
   
 </pre>
