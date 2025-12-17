@@ -10,4 +10,7 @@
   docker exec test-bridge-custom-1 ping 172.18.0.3 -c1
 
   Now you can not connect to default bridge network.
+
+  We can connect the containers by name, and not only by IP address. It only happen in custom bridge network not with default bridge network. 
+  <b>In the customer bridge, it also gives DNS resolver to call container by name.</b>
 </pre>
