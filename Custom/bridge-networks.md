@@ -17,4 +17,7 @@
   docker network connect bridge test-bridge-custom-1
 
   <b>In the customer bridge, it also gives DNS resolver to call container by name.</b>
+  
+  docker0 is the gatway of bridge network.
+  
 </pre>
