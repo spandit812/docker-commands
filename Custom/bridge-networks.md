@@ -19,5 +19,7 @@
   <b>In the customer bridge, it also gives DNS resolver to call container by name.</b>
   
   docker0 is the gatway of bridge network.
-  
+
+  <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/4fe9a96d-b82a-4081-ba96-1d3115e73997" />
+
 </pre>
