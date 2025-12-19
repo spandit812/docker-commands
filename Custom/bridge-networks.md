@@ -14,7 +14,7 @@
   We can connect the containers by name, and not only by IP address. It only happen in custom bridge network not with default bridge     network. 
   you can connect custom bridge network to default network:
   
-  docker network connect bridge test-bridge-custom-1
+  docker network connect bridge test-bridge-custom-1--> This way you would be able to connet with miltiple networks to the container.
 
   <b>In the customer bridge, it also gives DNS resolver to call container by name.</b>
   
