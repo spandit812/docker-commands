@@ -19,4 +19,7 @@ run > docker info --> check if swarm is active --> if active you should see swar
 ---
 <pre>
   This way if one machine stops, container will move to the other worker.
+  
+  https://labs.play-with-docker.com/
+  
 </pre>
