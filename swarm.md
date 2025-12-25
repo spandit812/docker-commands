@@ -14,5 +14,5 @@ run > docker info --> check if swarm is active --> if active you should see swar
   run this command on manager machine 
   docker swarm join-token worker
 
-  then run the next suggested command on the worker.
+  then run the next suggested command on the worker. then this machine will work as worker machine of the master/manager machine.
 </pre>
