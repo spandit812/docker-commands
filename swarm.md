@@ -16,3 +16,7 @@ run > docker info --> check if swarm is active --> if active you should see swar
 
   then run the next suggested command on the worker. then this machine will work as worker machine of the master/manager machine.
 </pre>
+---
+<pre>
+  This way if one machine stops, container will move to the other worker.
+</pre>
