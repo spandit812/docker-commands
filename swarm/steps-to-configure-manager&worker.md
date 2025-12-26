@@ -1,5 +1,6 @@
 <pre>
-  Managere contains the database of cluster, docker demon internally have database which stores all details of cluster.
+  1. Managere contains the database of cluster, docker demon internally have database which stores all details of cluster.
+  2. Database of the cluster is stored at /var/lib/docker/swarm  --> at this location raft file creates at manager location whichi is database.
 </pre>
 ---
 <pre>
