@@ -1,6 +1,7 @@
 <pre>
-  To store something secretly
+  To store something secretly, secrets are mounted in the memory where as configs are mounted in the disk.
   docker secret create php-secret php/index.php
+  docker secret ls
   
 </pre>
 
