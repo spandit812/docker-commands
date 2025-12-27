@@ -15,3 +15,10 @@
 1. To list number of machines running, run below command
   > docker node ls
 </pre>
+
+<pre>
+  you can promote workers to master by commnd:
+  docker node promote node4 node5
+  to demote:
+  docker node demote node4 node5
+</pre>
