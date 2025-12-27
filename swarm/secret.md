@@ -1,5 +1,5 @@
 <pre>
-  To store something secretly, secrets are mounted in the memory where as configs are mounted in the disk.
+  To store something secretly, secrets are mounted in the memory(temp ) where as configs are mounted in the disk (overlay2 folder).
   docker secret create php-secret php/index.php
   docker secret ls
   
