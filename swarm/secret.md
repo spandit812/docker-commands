@@ -1,4 +1,6 @@
 <pre>
+  Secret is docker object, which is stored in docker engine and contains in of the secret files. Difference is not much between docker  config and docker secret, places are different where they are kept.
+  Limitation: file size should be 500kb. If file size exceeds this size, you need to create external docker volume / docker register which can contain more size files.
   
   To store something secretly, secrets are mounted in the memory(temp ) where as configs are mounted in the disk (overlay2 folder).
   docker secret create php-secret php/index.php
