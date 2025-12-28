@@ -8,9 +8,20 @@
   docker secret is by default mounted to /run/secrets folder
   where as config is mounted to / folder by default.
 </pre>
+---
 
+<pre>
+  <b>This will not work because of relative path of index.php</b>
+  tee php/index.php 0<<EOF
+  <?php phpinfo(); ?>
+  EOF
+    
+  docker config create php-config php/index.php
+  docker service create --secret source=php-config, targe=index.php --publish 8080 docker.io/library/php:alpine -f index.php -S 0.0.0.0:8080
+</pre>
 ---
 <pre>
+  <b>This will work add absolute path is mentioned /index.php</b>
   tee php/index.php 0<<EOF
   <?php phpinfo(); ?>
   EOF
