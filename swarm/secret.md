@@ -9,7 +9,11 @@
   where as config is mounted to / folder by default.
 </pre>
 ---
-
+<pre>
+  with --workdir
+  docker service create --name secret_container --secret source=my_secret,target=/php/index.php --entrypoint php --workdir /php --publish 30005:8088 docker.io/library/php:alpine -S 0.0.0.0:8088
+</pre>
+---
 <pre>
   <b>This will not work because of relative path of index.php</b>
   tee php/index.php 0<<EOF
