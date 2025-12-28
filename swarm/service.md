@@ -1,4 +1,7 @@
 <pre>
+  Service is the group of identical containers that are running in the worker which 
+  1. mounts the config created, with all files which are there in the config.
+  
   Service gives you high availability.
   <b>Create service:</b> 
  <b> Not published:</b>
