@@ -17,7 +17,13 @@
   EOF
     
   docker config create php-config php/index.php
+    
   docker service create --secret source=php-config, targe=index.php --publish 8080 docker.io/library/php:alpine -f index.php -S 0.0.0.0:8080
+</pre>
+---
+<pre>
+  with --workdir
+  docker service create --name secret_container --secret source=my_secret,target=/php/index.php --entrypoint php --workdir /php --publish 30005:8088 docker.io/library/php:alpine -S 0.0.0.0:8088
 </pre>
 ---
 <pre>
