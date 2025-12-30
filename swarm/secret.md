@@ -39,3 +39,11 @@
   docker config create php-config php/index.php
   docker service create --secret source=php-config, targe=/index.php --publish 8080 docker.io/library/php:alpine -f index.php -S 0.0.0.0:8080
 </pre>
+---
+<pre>
+  Better to check the command of removing/adding by docker service update --help
+  <b>Remove and add the secret at the service:</b>
+  docker service update --secret-rm secret_container
+  <b>To add other secret:</b>
+  docker service update --secret-add secret_container
+</pre>
