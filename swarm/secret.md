@@ -43,7 +43,8 @@
 <pre>
   Better to check the command of removing/adding by docker service update --help
   <b>Remove and add the secret at the service:</b>
-  docker service update --secret-rm secret_container
+  docker service update --secret-rm service-name
   <b>To add other secret:</b>
-  docker service update --secret-add secret_container
+  docker service update --secret-add secret_container-other service-name
+  This will remove the earlier task and starts new task
 </pre>
