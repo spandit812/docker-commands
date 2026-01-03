@@ -1,6 +1,6 @@
 1. In this we are creating image from Dockerfile , which will be created from compose.yml file using build: .
 2. docker compose up -d --> This command will only create & run the container which will use image(panditisbusy:latest) created.
-3. There will not be service created using docker compose up
+3. There will not be service created using docker compose up as we create docker service create ....
 
 ---
 <pre>
