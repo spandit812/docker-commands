@@ -29,7 +29,8 @@ EOF
 </pre>
 ---
 <pre>
-Remove build: .
+WORKING COMMAND
+Removed build: . from yml file
   
 docker build -t panditisbusy:latest .
 
