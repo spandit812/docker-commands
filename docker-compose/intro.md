@@ -7,6 +7,6 @@
   It uses manifest to communicate to docker engine, instead of using command 
   like: docker service create, docker service update,  docker service scale......, 
   it uses manifest or template in yml format.
-  Reference:  https://docs.docker.com/compose/compose-file/compose-file-v3
+  Reference:  https://docs.docker.com/reference/compose-file/
   
 </pre>
