@@ -1,7 +1,7 @@
 <pre>
   config is also called config map, it will be stored in the docker database and stores the mentioned file, while creating the config. It   will be used in the docker swarm service.
   
-  CONFIG copies index.php in all manager nodes.
+  CONFIG copies index.php(for example if you want to use index.php in the service) in all manager nodes.
 
   docker config inspect php-config
   echo PD9waHAgcGhwaW5mbygpOz8+Cg== | base64 -d
