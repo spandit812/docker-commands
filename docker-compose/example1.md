@@ -13,6 +13,6 @@ EOF
                           image: panditisbusy:latest
                           build: .
                           entrypoint: ["sleep", "infinity"]
-                        EOF
+EOF
                           
 </pre>
