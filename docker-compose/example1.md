@@ -32,3 +32,11 @@ EOF
 <pre>
  docker compose down #This will delete container and network created but not image
 </pre>
+
+<pre>
+ <b>
+ To run the service and appear in docker service ls , only if you use docker swarm.
+ deploy as swarm stack
+  </b>
+ visit: example2.md
+</pre>
