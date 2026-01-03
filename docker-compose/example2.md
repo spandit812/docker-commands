@@ -21,3 +21,27 @@ services:
 EOF
                           
 </pre>
+---
+<pre>
+  docker stack deploy -c compose.yml
+  This will throw error: No such image: panditisbusy
+  because, stack deploy (docker swarm) does not create image like compose, it looks(it only pulls) for image created locally or registry.
+</pre>
+---
+<pre>
+Remove build: .
+  
+docker build -t panditisbusy:latest .
+
+tee compose.yml 0<< EOF
+services: 
+ busybox:
+  image: panditisbusy:latest
+  entrypoint: ["sleep", "infinity"]
+EOF
+  
+docker stack deploy -c compose.yml mystack
+docker service ls
+docker service ps mystack_busybox
+  now, swarm will ignore build: .
+</pre>
