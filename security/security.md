@@ -9,4 +9,9 @@
   create custom network
   4. in the compose file mention the resource for memory and cup size, if attacker attacks only that much memory can be used.
   use resource with limit and reservation with the same amount.
+  5. In the entrypoint of the compose file, rather than giving only entrypoint: php we should give exact path
+  docker exec PHPINFO_php-svc.4.z51xlgdlmt1ifpjmjvemh8z1r which php
+  entrypoint: /user/local/bin/php
+
+  
 </pre>
