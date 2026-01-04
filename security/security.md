@@ -7,4 +7,5 @@
   use config and secret as much as possible, it's targe should be in custom folder not in root file system. with working_dir.
   3. Network:
   create custom network
+  4. in the compose file mention the resource for memory and cup size, if attacker attacks only that much memory can be used.
 </pre>
