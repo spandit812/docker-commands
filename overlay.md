@@ -15,4 +15,7 @@ Docker Swarm initialized (for most overlay network features)
 https://medium.com/@tukai.anirban/container-networking-overlay-networks-b712d6ddfb67
 
 <img width="507" height="312" alt="image" src="https://github.com/user-attachments/assets/33481776-3663-4f6d-aed8-c88f523f0009" />
+
+  <img width="571" height="402" alt="image" src="https://github.com/user-attachments/assets/443923a8-8a0c-4c5b-bc82-58c36457ec1e" />
+
 </pre>
