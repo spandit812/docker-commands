@@ -14,5 +14,7 @@
   entrypoint: /user/local/bin/php
   6. compose file container should be ready_only: true // if someone tries to write file, would not be able to write.
 
+  https://github.com/sebastian-colomar/dca/blob/main/caltech_2022-08/2022-08-20.md
+  
   
 </pre>
