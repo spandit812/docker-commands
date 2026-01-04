@@ -8,5 +8,5 @@
   3. Network:
   create custom network
   4. in the compose file mention the resource for memory and cup size, if attacker attacks only that much memory can be used.
-  use resource with limit and reservation.
+  use resource with limit and reservation with the same amount.
 </pre>
