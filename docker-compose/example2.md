@@ -42,6 +42,8 @@ services:
 EOF
   
 docker stack deploy -c compose.yml mystack
+docker stack ls               ---> to see the stack
+docker stack services mystack ---> to see the services under that stack.
 docker service ls
 docker service ps mystack_busybox
   now, swarm will ignore build: .
