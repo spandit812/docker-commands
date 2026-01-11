@@ -1,4 +1,8 @@
 <pre>
+  docker0 is a bridge network
+  
+  docker0 is the default Linux bridge that Docker creates automatically when the Docker daemon starts.
+  
   <b>create custom bridge nework: In proction we should never create container in default network</b>
   docker network create --driver bridge custom-bridge
   docker network ls
