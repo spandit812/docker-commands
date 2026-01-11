@@ -26,4 +26,5 @@
 
   <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/4fe9a96d-b82a-4081-ba96-1d3115e73997" />
 
+  docker network rm mynet # to remove the mynet network
 </pre>
